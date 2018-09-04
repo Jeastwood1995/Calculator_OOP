@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+        <title>Calculator</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+        <script src="js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="ui container">
+            <div class="ui segment" style="margin-top: 20px;">
+                <h1> Basic Calculator </h1>
+                <form class="ui form" id="form">
+                    <div class="field">
+                        <label for="operand-one"> First Number: </label>
+                        <input type="text" class="form-control" id="operand-one" name="operand_one" placeholder="First Number" />
+                    </div>
+                    <div class="field">
+                        <label for="operand-two"> Second Number: </label>
+                        <input type="text" class="form-control" id="operand-two" name="operand_two" placeholder="Second Number" />
+                    </div>
+                    <div class="field">
+                        <label for="operand-three"> Third Number (Optional): </label>
+                        <input type="text" class="form-control" id="operand-three" name="operand_three" placeholder="Third Number (Optional)"/>
+                    </div>
+                    <div class="field">
+                        <label for="operator_one">First Operator</label>
+                        <select name="operator_one" id="operator_one" class="ui selection dropdown" >
+                            <option value=""> First Operator </option>
+                            <option value="+"> + </option>
+                            <option value="-"> - </option>
+                            <option value="/"> / </option>
+                            <option value="*"> * </option>
+                            <option value="<<"> << </option>
+                            <option value=">>"> >> </option>
+                            <option value="&"> & </option>
+                            <option value="%"> % </option>
+                            <option value="|"> | </option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="operator_two">Second Operator (Optional)</label>
+                        <select name="operator_two" id="operator_two" class="ui selection dropdown" >
+                            <option value=""> Second Operator </option>
+                            <option value="+"> + </option>
+                            <option value="-"> - </option>
+                            <option value="/"> / </option>
+                            <option value="*"> * </option>
+                            <option value="<<"> << </option>
+                            <option value=">>"> >> </option>
+                            <option value="&"> & </option>
+                            <option value="%"> % </option>
+                            <option value="|"> | </option>
+                        </select>
+                    </div>
+                    <div class="ui buttons">
+                        <input type="submit" class="ui positive button" value="Submit" id="submit_button">
+                        <div class="or"></div>
+                        <input type="button" class="ui negative button" value="Reset" id="reset_button">
+                    </div>
+                    <div class="ui error message">
+                    </div>
+                </form>
+            </div>
+            <div class="ui segment" style="display: none;" id="result">
+            </div>
+        </div>
+    </body>
+</html>
+
+
