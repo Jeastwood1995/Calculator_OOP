@@ -1,4 +1,4 @@
-# basic-scientific-calculator
+# basic-scientific-calculator-PHP
 Basic Scientific Calculator demonstrating OOP functions
 
 Contains:
